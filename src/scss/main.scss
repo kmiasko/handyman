@@ -1,5 +1,13 @@
+@import 'settings';
+
+// RESET
 @import 'ress';
+
+// BOURBON
 @import 'bourbon';
-@import 'purecss/grid-responsive';
+
+// VARIABLES OVERWRITE
 @import 'variables';
+
+// ACTUAL STYLING
 @import 'styles';
