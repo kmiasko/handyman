@@ -1,7 +1,7 @@
 {
   "name": "html5starter",
   "version": "0.0.1",
-  "description": "Bourbon + PureCSS + RESS",
+  "description": "Bourbon + gridle.scss + RESS",
   "homepage": "http://kmiasko.github.com/html5starter",
   "scripts": {
     "start": "gulp",
