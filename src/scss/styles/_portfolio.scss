@@ -1,0 +1,42 @@
+#portfolio {
+  padding: 3em 0.5em;
+
+  .container {
+    max-width: 900px;
+  }
+
+  & h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 4em;
+  }
+
+  .portfolio-grid {
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    width: 160px;
+    float: left;
+
+    img {
+      vertical-align: top;
+    }
+  }
+}
+
+#portfolio {
+  @include gridle_state( tablet ) {
+
+      .grid-item {
+        transform: scale(1);
+        transition: transform 0.2s ease-out;
+      }
+
+      .grid-item:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-out;
+        z-index: 10;
+      }
+  }
+}

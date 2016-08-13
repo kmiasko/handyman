@@ -1,0 +1,134 @@
+.hero, .parallax {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__telephone {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: $color-bright;
+  text-transform: uppercase;
+}
+
+.hero__header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    margin: 0;
+    line-height: 1;
+    font-size: 3.5em;
+    color: $color-bright;
+  }
+
+  span {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.4em;
+    color: $base-font-color;
+  }
+
+  p {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1.5em;
+  }
+}
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  > div {
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
+    object-fit: scale-down;
+    object-position: 50% 50%;
+  }
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__item {
+  display: inline-block;
+}
+
+#nav {
+  height: 4em;
+  line-height: 4em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease-in;
+
+  &.nav-moved {
+    background: $color-dark;
+    height: 3em;
+    line-height: 3em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: background 0.3s ease-in;
+  }
+
+  .navigation {
+    text-align: center;
+  }
+
+  .navigation__item {
+    color: $color-yellow;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0 0.5em;
+
+    a {
+      color: $color-yellow;
+      text-decoration: none;
+
+      &:active,
+      &:visited,
+      &:focus {
+        color: currentColor;
+      }
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+}
+
+.hero {
+  @include gridle_state(tablet) {
+
+    .hero__header {
+      h1 {
+        font-size: 6em;
+      }
+    }
+
+    #nav {
+      .navigation__item {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

@@ -1,11 +1,15 @@
 // Website Variables and Colours
 
 
-$base-font-color: #343434;
-$base-font-family: "liberation-sans";
-$base-line-height: 24px;
-$base-heading-font-family: "lato";
+$base-font-family: 'Raleway';
+$base-line-height: 26px;
+$base-heading-font-family: 'Montserrat';
 
-$color-white: #fff;
-$color-blue: #3FC5FF;
+$color-white: #f6f6f6;
+$color-dark: #422e2d;
+$color-brown: #9c5d47;
+$color-orange: #ce7338;
+$color-yellow: #f0aa70;
+$color-bright: #f2dabd;
 
+$base-font-color: $color-white;
