@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "postinstall": "cp node_modules/ress/ress.css node_modules/ress/ress.scss && rm -f node_modules/ress/ress.css"
+    "postinstall": "cp node_modules/ress/ress.css node_modules/ress/ress.scss && rm -f node_modules/ress/ress.css",
+    "publish": "git push; rsync -avz -e 'ssh' dist/* kmiasko@kmiasko.ct8.pl:/home/kmiasko/domains/kmiasko.ct8.pl/public_html/handyman"
   },
   "repository": {
     "type": "git",
