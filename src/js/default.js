@@ -2,11 +2,15 @@ $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
   var parallax = $('.parallax');
 
-  $('.portfolio-grid').masonry({
+  var $grid = $('.portfolio-grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: 160,
     fitWidth: true,
     gutter: 0
+  });
+
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
   });
 
   new ScrollMagic.Scene({
