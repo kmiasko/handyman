@@ -1,4 +1,4 @@
-#services {
+.services {
   padding: 6em 0.5em 3em;
 
   .service {
@@ -55,7 +55,7 @@
   }
 }
 
-#services {
+.services {
   @include gridle_state( tablet ) {
     .service:nth-child(odd) {
       .service__image {

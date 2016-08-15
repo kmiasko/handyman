@@ -1,0 +1,49 @@
+.contact {
+  padding: 3em 0.5em 8em;
+
+
+  p {
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 3em;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 3em;
+    text-transform: uppercase;
+  }
+
+  .form-wrapper {
+    max-width: 95%;
+    margin: 1em auto;
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      border-bottom: 2px solid $color-yellow;
+      color: $color-yellow;
+      padding: 0.5em 1em;
+      display: block;
+    }
+  }
+
+  input[type="submit"] {
+    padding: 0.5em 1em;
+    background: $color-orange;
+    text-align: center;
+    margin: 2em 0;
+    float: right;
+  }
+}
+
+.contact {
+  @include gridle_state( tablet ) {
+    .form-wrapper {
+      max-width: 25em;
+    }
+  }
+}
