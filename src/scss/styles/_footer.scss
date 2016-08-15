@@ -1,2 +1,31 @@
 // Footer
+.footer {
+  background: $color-footer;
+  padding: 6em 0;
+  text-align: center;
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  a:active,
+  a:visited,
+  a:focus {
+    color: $color-white;
+  }
+
+  i {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 0.5em;
+  }
+}
 

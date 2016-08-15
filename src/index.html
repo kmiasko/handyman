@@ -5,8 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>HandyMan Basel</title>
 
-  <meta name="description" content="">
-  <meta name="theme-color" content="#f7c824">
+  <link rel="canonical" href="http://handymanbasel.ch/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HandyMan Basel" />
+  <meta property="og:description" content="Welcome to Our Website Services FITTING, FIXING &amp; ASSEMBLING DECORATING &amp; HANGING STUFF ELECTRICAL WORK PLUMBING WORK CARPENTRY READ MORE &gt;&gt;&gt; &nbsp;" />
+  <meta property="og:url" content="http://handymanbasel.ch/" />
+  <meta property="og:site_name" content="HandyMan Basel" />
+  <meta name="description" content="Welcome to Our Website Services FITTING, FIXING &amp; ASSEMBLING DECORATING &amp; HANGING STUFF ELECTRICAL WORK PLUMBING WORK CARPENTRY READ MORE &gt;&gt;&gt; &nbsp;">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
@@ -16,10 +22,11 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
   <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
 
 </head>
 <body>
-  <div class="hero">
+  <div class="hero" id="hero">
     <div class="hero__header">
       <h1>Handyman <span>BASEL</span></h1>
       <p>Trust our <strong>experience</strong> to improve your home</p>
@@ -33,7 +40,7 @@
       <div><img src="img/hero3.jpg" alt=""></div>
       <div><img src="img/hero4.jpg" alt=""></div>
     </div>
-    <nav class="clear" id="nav">
+    <nav class="nav clear" id="nav">
       <ul class="navigation">
         <li class="navigation__item"><a href="#services">Services</a></li>
         <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
@@ -41,7 +48,7 @@
       </ul>
     </nav>
   </div>
-  <section id="services">
+  <section id="services" class="services">
     <div class="container">
       <h2>Services</h2>
       <p>Professional & reliable handyman service small jobs, odd jobs & large jobs</p>
@@ -133,7 +140,7 @@
         </div>
       </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <h2>Our Portfolio</h2>
         <div class="portfolio-grid">
@@ -156,6 +163,34 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="contact">
+      <div class="contact-heading">
+        <h2>Contact us!</h2>
+        <p>Call us: + 41 76 609 36 98</p>
+        <p>or</p>
+        <p>Send us an e-mail</p>
+      </div>
+      <div class="form-wrapper">
+        <form class="clear" action="https://formspree.io/carpenter@gmx.co.uk" method="POST">
+          <input type="text" name="name" placeholder="Your name">
+          <input type="email" name="_replyto" placeholder="Your e-mail">
+          <input type="hidden"  name="_subject">
+          <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="submit" name="send" value="Send">
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="footer-contact">
+        <ul>
+          <li><a href="tel:+41766093698"><i class="ion-iphone"></i> + 41 76 609 36 98</a></li>
+          <li><a href="mailto:carpenter@gmx.co.uk"><i class="ion-email"> carpenter@gmx.co.uk</i></a></li>
+          <li><a href="https://www.facebook.com/carpenterbasel/"><i class="ion-social-facebook"></i> carpenterbasel</a></li>
+        </ul>
+      </div>
+      <p>Copyright © HandyMan Basel 2016</p>
+    </footer>
 </div>
 
 <script src="js/vendor/jquery.min.js"></script>

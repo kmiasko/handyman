@@ -2,7 +2,7 @@ let SessionLoad = 1
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/workdir/carpenter
+cd ~/workdir/handyman
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -16,7 +16,7 @@ badd +7 src/js/default.js
 badd +29 src/scss/styles/_portfolio.scss
 argglobal
 silent! argdel *
-argadd ~/workdir/carpenter
+argadd ~/workdir/handyman
 edit src/scss/styles/_portfolio.scss
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -51,10 +51,10 @@ exe s:l
 normal! zt
 29
 normal! 033|
-lcd ~/workdir/carpenter
+lcd ~/workdir/handyman
 wincmd w
 argglobal
-edit ~/workdir/carpenter/src/index.html
+edit ~/workdir/handyman/src/index.html
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -70,10 +70,10 @@ exe s:l
 normal! zt
 33
 normal! 011|
-lcd ~/workdir/carpenter
+lcd ~/workdir/handyman
 wincmd w
 argglobal
-edit ~/workdir/carpenter/src/scss/styles/_variables-colors.scss
+edit ~/workdir/handyman/src/scss/styles/_variables-colors.scss
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -89,7 +89,7 @@ exe s:l
 normal! zt
 8
 normal! 0
-lcd ~/workdir/carpenter
+lcd ~/workdir/handyman
 wincmd w
 exe 'vert 1resize ' . ((&columns * 53 + 60) / 120)
 exe '2resize ' . ((&lines * 23 + 25) / 51)

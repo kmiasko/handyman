@@ -71,7 +71,7 @@
   display: inline-block;
 }
 
-#nav {
+.nav {
   height: 4em;
   line-height: 4em;
   position: absolute;
@@ -125,7 +125,7 @@
       }
     }
 
-    #nav {
+    .nav {
       .navigation__item {
         font-size: 1.2em;
       }

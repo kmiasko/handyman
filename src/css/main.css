@@ -323,17 +323,17 @@ video {
   display: table;
   clear: both; }
 
-.row:before, .row-reverse:before, #services .service:before, .row:after, .row-reverse:after, #services .service:after {
+.row:before, .row-reverse:before, .services .service:before, .row:after, .row-reverse:after, .services .service:after {
   content: "";
   display: table; }
 
-.row:after, .row-reverse:after, #services .service:after {
+.row:after, .row-reverse:after, .services .service:after {
   clear: both; }
 
-.row, .row-reverse, #services .service {
+.row, .row-reverse, .services .service {
   zoom: 1; }
 
-.gr-0, .gr-1, .gr-2, .gr-3, .gr-4, .gr-5, .gr-6, .gr-7, .gr-8, .gr-9, .gr-10, .gr-11, .gr-12, #services .service .service__image, #services .service .service__description {
+.gr-0, .gr-1, .gr-2, .gr-3, .gr-4, .gr-5, .gr-6, .gr-7, .gr-8, .gr-9, .gr-10, .gr-11, .gr-12, .services .service .service__image, .services .service .service__description {
   display: inline-block;
   min-height: 1px;
   float: left;
@@ -394,7 +394,7 @@ video {
     zoom: 1; } }
 
 @media screen and (min-width: 765px) {
-  .gr-0\@tablet, .gr-1\@tablet, .gr-2\@tablet, .gr-3\@tablet, .gr-4\@tablet, .gr-5\@tablet, .gr-6\@tablet, .gr-7\@tablet, .gr-8\@tablet, .gr-9\@tablet, .gr-10\@tablet, .gr-11\@tablet, .gr-12\@tablet, #services .service .service__image, #services .service .service__description {
+  .gr-0\@tablet, .gr-1\@tablet, .gr-2\@tablet, .gr-3\@tablet, .gr-4\@tablet, .gr-5\@tablet, .gr-6\@tablet, .gr-7\@tablet, .gr-8\@tablet, .gr-9\@tablet, .gr-10\@tablet, .gr-11\@tablet, .gr-12\@tablet, .services .service .service__image, .services .service .service__description {
     display: inline-block;
     min-height: 1px;
     float: left;
@@ -421,11 +421,11 @@ video {
     padding-left: 10px; } }
 
 @media screen and (min-width: 765px) {
-  .push-0\@tablet, .push-1\@tablet, .push-2\@tablet, .push-3\@tablet, .push-4\@tablet, .push-5\@tablet, .push-6\@tablet, .push-7\@tablet, .push-8\@tablet, .push-9\@tablet, .push-10\@tablet, .push-11\@tablet, .push-12\@tablet, #services .service:nth-child(odd) .service__image {
+  .push-0\@tablet, .push-1\@tablet, .push-2\@tablet, .push-3\@tablet, .push-4\@tablet, .push-5\@tablet, .push-6\@tablet, .push-7\@tablet, .push-8\@tablet, .push-9\@tablet, .push-10\@tablet, .push-11\@tablet, .push-12\@tablet, .services .service:nth-child(odd) .service__image {
     position: relative; } }
 
 @media screen and (min-width: 765px) {
-  .pull-0\@tablet, .pull-1\@tablet, .pull-2\@tablet, .pull-3\@tablet, .pull-4\@tablet, .pull-5\@tablet, .pull-6\@tablet, .pull-7\@tablet, .pull-8\@tablet, .pull-9\@tablet, .pull-10\@tablet, .pull-11\@tablet, .pull-12\@tablet, #services .service:nth-child(odd) .service__description {
+  .pull-0\@tablet, .pull-1\@tablet, .pull-2\@tablet, .pull-3\@tablet, .pull-4\@tablet, .pull-5\@tablet, .pull-6\@tablet, .pull-7\@tablet, .pull-8\@tablet, .pull-9\@tablet, .pull-10\@tablet, .pull-11\@tablet, .pull-12\@tablet, .services .service:nth-child(odd) .service__description {
     position: relative; } }
 
 @media screen and (min-width: 765px) {
@@ -1649,6 +1649,26 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
+.footer {
+  background: #091D1E;
+  padding: 6em 0;
+  text-align: center; }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em auto; }
+  .footer a {
+    text-decoration: none;
+    color: #f6f6f6; }
+  .footer a:active,
+  .footer a:visited,
+  .footer a:focus {
+    color: #f6f6f6; }
+  .footer i {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 0.5em; }
+
 html, body {
   width: 100%;
   height: 100%; }
@@ -1721,7 +1741,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation__item {
   display: inline-block; }
 
-#nav {
+.nav {
   height: 4em;
   line-height: 4em;
   position: absolute;
@@ -1730,71 +1750,71 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000;
   -webkit-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in; }
-  #nav.nav-moved {
+  .nav.nav-moved {
     background: #422e2d;
     height: 3em;
     line-height: 3em;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: background 0.3s ease-in;
     transition: background 0.3s ease-in; }
-  #nav .navigation {
+  .nav .navigation {
     text-align: center; }
-  #nav .navigation__item {
+  .nav .navigation__item {
     color: #f0aa70;
     font-size: 0.9em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 0 0.5em; }
-    #nav .navigation__item a {
+    .nav .navigation__item a {
       color: #f0aa70;
       text-decoration: none; }
-      #nav .navigation__item a:active, #nav .navigation__item a:visited, #nav .navigation__item a:focus {
+      .nav .navigation__item a:active, .nav .navigation__item a:visited, .nav .navigation__item a:focus {
         color: currentColor; }
-      #nav .navigation__item a:hover {
+      .nav .navigation__item a:hover {
         color: #ce7338; }
 
 @media screen and (min-width: 765px) {
   .hero .hero__header h1 {
     font-size: 6em; }
-  .hero #nav .navigation__item {
+  .hero .nav .navigation__item {
     font-size: 1.2em; } }
 
-#services {
+.services {
   padding: 6em 0.5em 3em; }
-  #services .service {
+  .services .service {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: -10px;
     margin-right: -10px;
     margin: 4em 0; }
-    [class*="no-gutter"] > #services .service {
+    [class*="no-gutter"] > .services .service {
       margin-left: 0 !important;
       margin-right: 0 !important; }
-    #services .service #services .service {
+    .services .service .services .service {
       margin-left: -10px;
       margin-right: -10px; }
     @media screen and (min-width: 765px) {
-      #services .service #services .service {
+      .services .service .services .service {
         margin-left: -10px;
         margin-right: -10px; } }
     @media screen and (min-width: 1025px) {
-      #services .service #services .service {
+      .services .service .services .service {
         margin-left: -10px;
         margin-right: -10px; } }
-    #services .service .service__image, #services .service .service__description {
+    .services .service .service__image, .services .service .service__description {
       width: 100%; }
 
 @media screen and (min-width: 765px) and (min-width: 765px) and (min-width: 765px) {
-  #services .service .service__image, #services .service .service__description {
+  .services .service .service__image, .services .service .service__description {
     width: 50%; } }
-      #services .service .service__image .image, #services .service .service__description .image {
+      .services .service .service__image .image, .services .service .service__description .image {
         max-width: 400px;
         margin: 0 auto; }
-      #services .service .service__image img, #services .service .service__description img {
+      .services .service .service__image img, .services .service .service__description img {
         max-width: 100%;
         display: block;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
-  #services ul {
+  .services ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1802,36 +1822,36 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 20em;
     margin: 0 auto;
     padding: 0 1em 0; }
-  #services h2 {
+  .services h2 {
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 1.5em; }
-    #services h2 + p {
+    .services h2 + p {
       text-align: center;
       max-width: 30em;
       margin: 0 auto;
       padding: 0 2em; }
-  #services h3 {
+  .services h3 {
     text-transform: uppercase;
     font-weight: 400;
     margin: 1.5em 0;
     text-align: center; }
 
 @media screen and (min-width: 765px) {
-  #services .service:nth-child(odd) .service__image {
+  .services .service:nth-child(odd) .service__image {
     left: 50%;
     right: auto; }
-  #services .service:nth-child(odd) .service__description {
+  .services .service:nth-child(odd) .service__description {
     right: 50%;
     left: auto; }
-  #services .service ul {
+  .services .service ul {
     padding: 0;
     max-width: auto; }
-  #services .service .service__description-content {
+  .services .service .service__description-content {
     position: relative;
     max-width: 30em;
     margin: 0 auto; }
-  #services .service__description-content h3:after {
+  .services .service__description-content h3:after {
     content: "";
     display: block;
     position: absolute;
@@ -1843,31 +1863,31 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); } }
 
-#portfolio {
+.portfolio {
   padding: 3em 0.5em; }
-  #portfolio .container {
+  .portfolio .container {
     max-width: 900px; }
-  #portfolio h2 {
+  .portfolio h2 {
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 4em; }
-  #portfolio .portfolio-grid {
+  .portfolio .portfolio-grid {
     margin: 0 auto; }
-  #portfolio .grid-item {
+  .portfolio .grid-item {
     width: 160px;
     float: left; }
-    #portfolio .grid-item img {
+    .portfolio .grid-item img {
       vertical-align: top; }
 
 @media screen and (min-width: 765px) {
-  #portfolio .grid-item {
+  .portfolio .grid-item {
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition: -webkit-transform 0.2s ease-out;
     transition: -webkit-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out; }
-  #portfolio .grid-item:hover {
+  .portfolio .grid-item:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-transition: -webkit-transform 0.2s ease-out;
@@ -1875,5 +1895,37 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
     z-index: 10; } }
+
+.contact {
+  padding: 3em 0.5em 8em; }
+  .contact p {
+    text-align: center; }
+    .contact p:last-child {
+      margin-bottom: 3em; }
+  .contact h2 {
+    text-align: center;
+    margin: 0 0 3em;
+    text-transform: uppercase; }
+  .contact .form-wrapper {
+    max-width: 95%;
+    margin: 1em auto; }
+    .contact .form-wrapper input[type="text"],
+    .contact .form-wrapper input[type="email"],
+    .contact .form-wrapper textarea {
+      width: 100%;
+      border-bottom: 2px solid #f0aa70;
+      color: #f0aa70;
+      padding: 0.5em 1em;
+      display: block; }
+  .contact input[type="submit"] {
+    padding: 0.5em 1em;
+    background: #ce7338;
+    text-align: center;
+    margin: 2em 0;
+    float: right; }
+
+@media screen and (min-width: 765px) {
+  .contact .form-wrapper {
+    max-width: 25em; } }
 
 /*# sourceMappingURL=main.css.map */
