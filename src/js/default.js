@@ -4,9 +4,9 @@ $(document).ready(function() {
 
   var $grid = $('.portfolio-grid').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 160,
+    columnWidth: 240,
     fitWidth: true,
-    gutter: 0
+    gutter: 10
   });
 
   $grid.imagesLoaded().progress( function() {

@@ -1866,7 +1866,7 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio {
   padding: 3em 0.5em; }
   .portfolio .container {
-    max-width: 900px; }
+    max-width: 1200px; }
   .portfolio h2 {
     text-transform: uppercase;
     text-align: center;
@@ -1874,27 +1874,27 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio .portfolio-grid {
     margin: 0 auto; }
   .portfolio .grid-item {
-    width: 160px;
-    float: left; }
+    width: 240px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden;
+    border: 5px solid #f2dabd; }
     .portfolio .grid-item img {
-      vertical-align: top; }
-
-@media screen and (min-width: 765px) {
-  .portfolio .grid-item {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform 0.2s ease-out;
-    transition: -webkit-transform 0.2s ease-out;
-    transition: transform 0.2s ease-out;
-    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out; }
-  .portfolio .grid-item:hover {
+      vertical-align: top;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform 0.2s ease-out;
+      transition: -webkit-transform 0.2s ease-out;
+      transition: transform 0.2s ease-out;
+      transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out; }
+  .portfolio .grid-item:hover img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-transition: -webkit-transform 0.2s ease-out;
     transition: -webkit-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    z-index: 10; } }
+    z-index: 10; }
 
 .contact {
   padding: 3em 0.5em 8em; }
