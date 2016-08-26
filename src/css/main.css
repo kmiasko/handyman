@@ -1864,7 +1864,7 @@ h1, h2, h3, h4, h5, h6 {
             transform: translateX(-50%); } }
 
 .portfolio {
-  padding: 3em 0.5em; }
+  padding: 3em 0.5em 6em; }
   .portfolio .container {
     max-width: 1200px; }
   .portfolio h2 {
@@ -1897,7 +1897,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10; }
 
 .contact {
-  padding: 3em 0.5em 8em; }
+  padding: 6em 0.5em 8em; }
   .contact p {
     text-align: center; }
     .contact p:last-child {
@@ -1927,5 +1927,9 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 765px) {
   .contact .form-wrapper {
     max-width: 25em; } }
+
+.map-wrapper {
+  height: 400px;
+  width: auto; }
 
 /*# sourceMappingURL=main.css.map */
