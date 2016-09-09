@@ -1739,7 +1739,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 .navigation__item {
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
 
 .nav {
   height: 4em;
@@ -1778,6 +1779,31 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 6em; }
   .hero .nav .navigation__item {
     font-size: 1.2em; } }
+
+.navigation__sub {
+  display: none;
+  position: absolute;
+  text-align: left;
+  bottom: 3.2em;
+  left: 0.6em;
+  line-height: 1.4;
+  height: 4em; }
+
+.navigation__item > span {
+  cursor: default; }
+
+.navigation__item:hover .navigation__sub {
+  display: inline-block; }
+
+.nav-moved .navigation__sub {
+  bottom: 0;
+  top: 2.5em;
+  padding: 0.5em 0 1em; }
+
+.hero.smallsite {
+  height: 40%; }
+  .hero.smallsite a {
+    text-decoration: none; }
 
 .services {
   padding: 6em 0.5em 3em; }
