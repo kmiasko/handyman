@@ -3,12 +3,25 @@
   background: $color-footer;
   padding: 6em 0;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 
+  .footer-contact,
+  .footer-nav {
+    flex: 1 0 50%;
+  }
 
   ul {
     list-style: none;
     padding: 0;
     margin: 1em auto;
+  }
+
+  p {
+    flex: 1 1 100%;
+    margin: 2em auto;
   }
 
   a {
@@ -22,6 +35,10 @@
     color: $color-white;
   }
 
+  a:hover {
+    color: $color-orange;
+  }
+
   i {
     display: inline-block;
     font-size: 1.2em;
@@ -29,3 +46,9 @@
   }
 }
 
+@media screen and (min-width: 500px) {
+  .footer-contact,
+  .footer-nav {
+    flex: 1 0 50%;
+  }
+}

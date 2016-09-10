@@ -1652,11 +1652,31 @@ body {
 .footer {
   background: #091D1E;
   padding: 6em 0;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer .footer-contact,
+  .footer .footer-nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%; }
   .footer ul {
     list-style: none;
     padding: 0;
     margin: 1em auto; }
+  .footer p {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 2em auto; }
   .footer a {
     text-decoration: none;
     color: #f6f6f6; }
@@ -1664,10 +1684,19 @@ body {
   .footer a:visited,
   .footer a:focus {
     color: #f6f6f6; }
+  .footer a:hover {
+    color: #ce7338; }
   .footer i {
     display: inline-block;
     font-size: 1.2em;
     margin: 0 0.5em; }
+
+@media screen and (min-width: 500px) {
+  .footer-contact,
+  .footer-nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%; } }
 
 html, body {
   width: 100%;
