@@ -47,11 +47,15 @@
     }
   }
 
-  h3 {
+  h3, h4 {
     text-transform: uppercase;
     font-weight: 400;
     margin: 1.5em 0;
     text-align: center;
+  }
+
+  h3 {
+    padding: 2.5em 0 1em;
   }
 }
 
