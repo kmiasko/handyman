@@ -421,11 +421,11 @@ video {
     padding-left: 10px; } }
 
 @media screen and (min-width: 765px) {
-  .push-0\@tablet, .push-1\@tablet, .push-2\@tablet, .push-3\@tablet, .push-4\@tablet, .push-5\@tablet, .push-6\@tablet, .push-7\@tablet, .push-8\@tablet, .push-9\@tablet, .push-10\@tablet, .push-11\@tablet, .push-12\@tablet, .services .service:nth-child(odd) .service__image {
+  .push-0\@tablet, .push-1\@tablet, .push-2\@tablet, .push-3\@tablet, .push-4\@tablet, .push-5\@tablet, .push-6\@tablet, .push-7\@tablet, .push-8\@tablet, .push-9\@tablet, .push-10\@tablet, .push-11\@tablet, .push-12\@tablet, .services .service:nth-of-type(odd) .service__image {
     position: relative; } }
 
 @media screen and (min-width: 765px) {
-  .pull-0\@tablet, .pull-1\@tablet, .pull-2\@tablet, .pull-3\@tablet, .pull-4\@tablet, .pull-5\@tablet, .pull-6\@tablet, .pull-7\@tablet, .pull-8\@tablet, .pull-9\@tablet, .pull-10\@tablet, .pull-11\@tablet, .pull-12\@tablet, .services .service:nth-child(odd) .service__description {
+  .pull-0\@tablet, .pull-1\@tablet, .pull-2\@tablet, .pull-3\@tablet, .pull-4\@tablet, .pull-5\@tablet, .pull-6\@tablet, .pull-7\@tablet, .pull-8\@tablet, .pull-9\@tablet, .pull-10\@tablet, .pull-11\@tablet, .pull-12\@tablet, .services .service:nth-of-type(odd) .service__description {
     position: relative; } }
 
 @media screen and (min-width: 765px) {
@@ -1887,6 +1887,8 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 100%;
         display: block;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+    .services .service .service__description-noheader {
+      margin-top: 5em; }
   .services ul {
     list-style: none;
     padding: 0;
@@ -1913,10 +1915,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2.5em 0 1em; }
 
 @media screen and (min-width: 765px) {
-  .services .service:nth-child(odd) .service__image {
+  .services .service:nth-of-type(odd) .service__image {
     left: 50%;
     right: auto; }
-  .services .service:nth-child(odd) .service__description {
+  .services .service:nth-of-type(odd) .service__description {
     right: 50%;
     left: auto; }
   .services .service ul {
